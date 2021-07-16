@@ -1,25 +1,38 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
 .header {
+  display: flex;
+  justify-content: space-between;
 }
 .logo {
-  font-family: 'Roboto', sans-serif;
+  padding: 40px 0;
 }
 .menu {
-  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  border: dashed 1px red;
 }
 .menu__item {
+  padding: 0 13px;
+}
+.menu__item:last-child {
+  padding-right: 0;
 }
 .section {
 }
 .main-content {
 }
 .main-content__title {
-  font-family: 'Roboto', sans-serif;
 }
 .main-content__subtitle {
-  font-family: 'Roboto', sans-serif;
 }
 .main-content__button {
-  font-family: 'Roboto', sans-serif;
 }
 .image-content {
 }
