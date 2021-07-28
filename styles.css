@@ -6,10 +6,10 @@ body {
   margin: auto;
 }
 .header {
-  padding: 40px 0;
+  /* padding: 40px 0; */
   display: flex;
   justify-content: space-between;
-  border: dashed 1px red;
+  margin-bottom: 100px;
 }
 
 .logo {
@@ -17,7 +17,6 @@ body {
   padding: 40px 0;
   padding-left: 44px;
   font: bold 24px/32px 'pt_serif', Arial, Helvetica, sans-serif;
-  border: dashed 1px red;
 }
 .logo__circle {
   width: 28px;
@@ -31,16 +30,20 @@ body {
 }
 .logo__circle_color_dark-blue {
   background: #0056ec;
+  padding-left: 4px;
 }
 .logo__circle_color_blue {
-  left: 8px;
+  left: 12px;
   top: 56%;
   background: #c8dbfb;
+}
+.logo__text {
+  padding-left: 4px;
 }
 .menu {
   display: flex;
   align-items: center;
-  border: dashed 1px red;
+  padding-top: 4px;
 }
 .menu__item {
   position: relative;
@@ -51,7 +54,7 @@ body {
   transition: opacity 0.5s;
 }
 .menu__item:last-child {
-  margin-right: 0;
+  margin-right: 11px;
 }
 .menu__item:after {
   position: absolute;
@@ -82,13 +85,46 @@ body {
   background: #0056ec;
 }
 
-/* .section */
-/* .main-content  */
-
-.main-content__title {
-  font-family: 'Roboto', sans-serif;
+.main {
+  padding: 104px 66% 150px 3px;
+  background: right 29px no-repeat url('img/mainimg.svg');
+  margin-bottom: 116px;
+  background-size: 50.2%;
 }
-/* .main-content__subtitle  */
-/* .main-content__button  */
-/* .image-content  */
-/* .imade-content__image */
+.main__title {
+  font: bold 66px/87px 'pt_serif', Arial, Helvetica, sans-serif;
+  margin: 0 0 40px 0;
+}
+.main__title-text_highlihgt {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 15%, #ecf3ff 15%);
+}
+.main__subtitle {
+  font: 22px/24px 'Roboto', Arial, Helvetica, sans-serif;
+  margin: 0 0 41px 0;
+  width: 81%;
+}
+.main__button {
+  display: inline-block;
+  padding: 21px 38px 18px 22px;
+  font: 18px/21px 'Roboto', Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: #0056ec;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.5s;
+}
+.main__button:hover {
+  opacity: 0.5;
+}
+.footer__points {
+  display: flex;
+  justify-content: center;
+}
+.footer__points_item {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+  background: #c8dbfb;
+  opacity: 0.7;
+}
